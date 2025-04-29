@@ -1,73 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine? ❤️</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: pink;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        h1 {
-            color: red;
-            font-size: 36px;
-            margin-top: 100px;
-        }
-        .heart {
-            position: absolute;
-            font-size: 24px;
-            color: red;
-            animation: float 4s linear infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(100vh); opacity: 1; }
-            100% { transform: translateY(-10vh); opacity: 0; }
-        }
-        .btn {
-            font-size: 20px;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin: 20px;
-        }
-        .yes { background-color: red; color: white; }
-        .no { background-color: gray; color: white; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A TRUE LOVE STORY</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #fff7f0, #fcecdc);
+      color: #5e3c2b;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fffaf5;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(180, 130, 100, 0.2);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #8b4513;
+    }
+    h1 {
+      font-size: 2.4em;
+    }
+    h2 {
+      font-size: 1.6em;
+      margin-top: 40px;
+    }
+    .page {
+      margin-bottom: 40px;
+    }
+    .dedication {
+      text-align: center;
+      font-style: italic;
+      color: #a0522d;
+      font-size: 1.1em;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #a87c5f;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Will you be my Valentine? 💖</h1>
-    <button class="btn yes" onclick="showLove()">Yes! 💕</button>
-    <button class="btn no" onclick="changeNoButton()">No... 😢</button>
+  <div class="container">
+    <h1>A TRUE LOVE STORY</h1>
+    <p class="dedication">TO MY LOVING BABY PRINCESS</p>
+    <p class="dedication"><strong>For the Love of My Life</strong></p>
+    <p class="dedication">By Mohammad Ameerah</p>
 
-    <script>
-        function createHeart() {
-            const heart = document.createElement("div");
-            heart.classList.add("heart");
-            heart.innerHTML = "❤️";
-            document.body.appendChild(heart);
+    <div class="page">
+      <h2>Page 1: The Warmth of You</h2>
+      <p>Loving you feels like waking up to the soft touch of sunlight through the window — gentle, golden, and full of promise... (content continues)</p>
+    </div>
 
-            heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+    <div class="page">
+      <h2>Page 2: You See Me</h2>
+      <p>With you, I feel seen — not just looked at, but understood. You read me in ways I can’t explain... (content continues)</p>
+    </div>
 
-            setTimeout(() => {
-                heart.remove();
-            }, 4000);
-        }
-        setInterval(createHeart, 300);
+    <div class="page">
+      <h2>Page 3: A Year and a Half of Magic</h2>
+      <p>We’ve been together for a year and a half now, but every moment still feels brand new... (content continues)</p>
+    </div>
 
-        function showLove() {
-            document.body.innerHTML = "<h1>Yay! I love you! 💘</h1>";
-        }
+    <div class="page">
+      <h2>Page 4: Everything You Are</h2>
+      <p>You’re beautiful — absolutely beautiful — but that’s just the beginning... (content continues)</p>
+    </div>
 
-        function changeNoButton() {
-            let noButton = document.querySelector(".no");
-            noButton.style.position = "absolute";
-            noButton.style.left = Math.random() * 80 + "vw";
-            noButton.style.top = Math.random() * 80 + "vh";
-        }
-    </script>
+    <div class="page">
+      <h2>Page 5: My Best Friend</h2>
+      <p>You’re the first person I want to talk to when I wake up and the last before I sleep... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 6: Our Future</h2>
+      <p>When I close my eyes and picture the future, you’re in it — always... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 7: How You Changed Me</h2>
+      <p>Before you, I didn’t know how soft love could be... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 8: We’re Unbreakable</h2>
+      <p>Even when life throws its worst, I don’t worry — because I have you... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 9: Your Love in Action</h2>
+      <p>You love me in the little things — your quiet presence, thoughtful words... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Page 10: Forever, One Sip at a Time</h2>
+      <p>A year and a half has passed, and my heart is still overflowing... (content continues)</p>
+    </div>
+
+    <div class="page">
+      <h2>Final Dedication</h2>
+      <p class="dedication">Forever yours, always your love — Mohammad</p>
+    </div>
+
+    <div class="footer">
+      <p>Made with love, light, and coffee.</p>
+    </div>
+  </div>
 </body>
 </html>
