@@ -2,118 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A TRUE LOVE STORY</title>
+  <title>For Rama ❤️</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("SCBw54qrdXYRHcX1X");
+    })();
+  </script>
+
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom, #fff7f0, #fcecdc);
-      color: #5e3c2b;
+      height: 100vh;
       margin: 0;
-      padding: 20px;
-      line-height: 1.8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
     }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: #fffaf5;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(180, 130, 100, 0.2);
-    }
-    h1, h2 {
+
+    .card {
+      background: white;
+      padding: 35px 45px;
+      border-radius: 25px;
       text-align: center;
-      color: #8b4513;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
     }
+
     h1 {
-      font-size: 2.4em;
+      color: #ff4d6d;
     }
-    h2 {
-      font-size: 1.6em;
-      margin-top: 40px;
+
+    button {
+      border: none;
+      padding: 14px 28px;
+      font-size: 20px;
+      border-radius: 35px;
+      cursor: pointer;
+      margin: 12px;
+      transition: all 0.3s ease;
     }
-    .page {
-      margin-bottom: 40px;
+
+    #yesBtn {
+      background-color: #ff4d6d;
+      color: white;
+      font-size: 22px;
     }
-    .dedication {
-      text-align: center;
-      font-style: italic;
-      color: #a0522d;
-      font-size: 1.1em;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #a87c5f;
-      margin-top: 40px;
+
+    #noBtn {
+      background-color: #e0e0e0;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>A TRUE LOVE STORY</h1>
-    <p class="dedication">TO MY LOVING BABY PRINCESS</p>
-    <p class="dedication"><strong>For the Love of My Life</strong></p>
-    <p class="dedication">By Mohammad Ameerah</p>
 
-    <div class="page">
-      <h2>Page 1: The Warmth of You</h2>
-      <p>Loving you feels like waking up to the soft touch of sunlight through the window — gentle, golden, and full of promise... (content continues)</p>
-    </div>
+  <div class="card">
+    <h1>Rama ❤️</h1>
+    <h2>Will you be my Valentine?</h2>
 
-    <div class="page">
-      <h2>Page 2: You See Me</h2>
-      <p>With you, I feel seen — not just looked at, but understood. You read me in ways I can’t explain... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 3: A Year and a Half of Magic</h2>
-      <p>We’ve been together for a year and a half now, but every moment still feels brand new... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 4: Everything You Are</h2>
-      <p>You’re beautiful — absolutely beautiful — but that’s just the beginning... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 5: My Best Friend</h2>
-      <p>You’re the first person I want to talk to when I wake up and the last before I sleep... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 6: Our Future</h2>
-      <p>When I close my eyes and picture the future, you’re in it — always... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 7: How You Changed Me</h2>
-      <p>Before you, I didn’t know how soft love could be... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 8: We’re Unbreakable</h2>
-      <p>Even when life throws its worst, I don’t worry — because I have you... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 9: Your Love in Action</h2>
-      <p>You love me in the little things — your quiet presence, thoughtful words... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Page 10: Forever, One Sip at a Time</h2>
-      <p>A year and a half has passed, and my heart is still overflowing... (content continues)</p>
-    </div>
-
-    <div class="page">
-      <h2>Final Dedication</h2>
-      <p class="dedication">Forever yours, always your love — Mohammad</p>
-    </div>
-
-    <div class="footer">
-      <p>Made with love, light, and coffee.</p>
-    </div>
+    <button id="yesBtn">Yes 💕</button>
+    <button id="noBtn">No 😢</button>
   </div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+
+    let yesSize = 22;
+
+    noBtn.addEventListener("click", () => {
+      yesSize += 10;
+      yesBtn.style.fontSize = yesSize + "px";
+    });
+
+    yesBtn.addEventListener("click", () => {
+  emailjs.send(
+    "service_x07k88p",
+    "template_1wivunk",
+    {
+      to_email: "mameerah42@gmail.com",
+      name: "Your Valentine 💕"
+    }
+  ).then(
+    () => {
+      document.body.innerHTML = `
+        <h1 style="color:white; font-size:48px; text-align:center;">
+          💖 Check your email 💖<br>
+                🍣❤️
+        </h1>`;
+    },
+    (error) => {
+      console.error(error);
+      alert("Email failed ❌ Check console");
+    }
+  );
+});
+
+  </script>
+
 </body>
 </html>
